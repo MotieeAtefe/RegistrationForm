@@ -1,0 +1,15 @@
+﻿@model RegistrationForm.Models.Users
+
+
+@if (@TempData["massage"]?.ToString() == "ثبت نام موفقیت‌آمیز بود!")
+{
+    <p style="color:green">@TempData["massage"]</p>
+}
+else
+
+{
+    <p style="color:red">@TempData["massage"]</p>
+}
+
+
+<a href="/Users/Register">🔙 بازگشت به فرم ثبت‌نام</a>

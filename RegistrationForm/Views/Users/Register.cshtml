@@ -1,0 +1,33 @@
+﻿@model RegistrationForm.Models.Users
+
+@if (@ViewData["Message"]?.ToString() != null)
+{
+    <p style="color:green">@ViewData["Message"]</p>
+}
+
+
+@if (@ViewBag.CurrentTime != null)
+{
+    <p style="color:green">@ViewBag.CurrentTime</p>
+}
+
+
+
+
+<h1>فرم ثبت نام</h1>
+<form action="/Users/Register" method="post">
+
+    <div>
+        <label>نام:</label>
+        <input nameame="Name"/>
+    </div>
+
+    <div>
+        <label>ایمیل:</label>
+        <input email="Email" />
+    </div>
+    <button type ="submit">ثبت نام</button>
+
+</form>
+
+
